@@ -1,0 +1,77 @@
+Server Software:        MyMuduoEcho
+Server Hostname:        127.0.0.1
+Server Port:            8000
+
+Document Path:          /
+Document Length:        0 bytes
+
+Concurrency Level:      100
+Time taken for tests:   54.496 seconds
+Complete requests:      1000000
+Failed requests:        0
+Non-2xx responses:      1000000
+Keep-Alive requests:    1000000
+Total transferred:      106000000 bytes
+HTML transferred:       0 bytes
+Requests per second:    18349.88 [#/sec] (mean)
+Time per request:       5.450 [ms] (mean)
+Time per request:       0.054 [ms] (mean, across all concurrent requests)
+Transfer rate:          1899.50 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       4
+Processing:     0    5   9.6      3     143
+Waiting:        0    5   9.6      3     143
+Total:          0    5   9.6      3     143
+
+Percentage of the requests served within a certain time (ms)
+  50%      3
+  66%      4
+  75%      5
+  80%      6
+  90%     10
+  95%     22
+  98%     36
+  99%     47
+ 100%    143 (longest request)
+
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8888
+
+Document Path:          /
+Document Length:        918 bytes
+
+Concurrency Level:      100
+Time taken for tests:   39.864 seconds
+Complete requests:      99903
+Failed requests:        0
+Non-2xx responses:      99903
+Keep-Alive requests:    99903
+Total transferred:      102300672 bytes
+HTML transferred:       91710954 bytes
+Requests per second:    2506.07 [#/sec] (mean)
+Time per request:       39.903 [ms] (mean)
+Time per request:       0.399 [ms] (mean, across all concurrent requests)
+Transfer rate:          2506.07 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   6.3      0    1004
+Processing:     0    0   3.6      0     147
+Waiting:        0    0   3.6      0     147
+Total:          0    0   7.4      0    1028
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%      0
+  75%      0
+  80%      0
+  90%      0
+  95%      1
+  98%      1
+  99%      3
+ 100%   1028 (longest request)
