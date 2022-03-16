@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MYMUDUO_CHANNEL
+#define MYMUDUO_CHANNEL
 
 #include <functional>
 #include <memory>
@@ -90,3 +91,5 @@ private:
 
 
 }
+
+#endif

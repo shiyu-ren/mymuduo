@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MYMUDUO_TIMESTAMP
+#define MYMUDUO_TIMESTAMP
 
 #include "noncopyable.h"
 #include <string>
@@ -45,3 +46,5 @@ inline Timestamp addTime(Timestamp timestamp, double seconds)
 }
 
 }
+
+#endif

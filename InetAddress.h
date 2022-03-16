@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MYMUDUO_INETADDRESS
+#define MYMUDUO_INETADDRESS
 
 #include <arpa/inet.h>
 #include <netinet/in.h>
@@ -41,3 +42,5 @@ private:
 
 
 }
+
+#endif

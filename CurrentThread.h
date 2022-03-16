@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MYMUDUO_CURRENTTHREAD
+#define MYMUDUO_CURRENTTHREAD
 
 #include <unistd.h>
 #include <sys/syscall.h>
@@ -23,3 +24,5 @@ namespace CurrentThread
 }
 
 }
+
+#endif 

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MYMUDUO_EVENTLOOP
+#define MYMUDUO_EVENTLOOP
 
 #include <vector>
 #include <atomic>
@@ -102,3 +103,5 @@ private:
 
 
 }
+
+#endif

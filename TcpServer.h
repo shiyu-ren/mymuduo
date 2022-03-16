@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MYMUDUO_TCPSERVER
+#define MYMUDUO_TCPSERVER
 
 #include <functional>
 #include <string>
@@ -82,3 +83,5 @@ private:
 
 
 }
+
+#endif
