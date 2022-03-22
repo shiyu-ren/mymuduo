@@ -8,7 +8,7 @@
 * Buffer部分Muduo库没有提供writeFd方法，本项目加入了writeFd，在处理outputBuffer剩余未发数据时交给Buffer来处理
 * 暂时没有做TcpClient部分
 
-具体实现见博文
+具体实现简介见博文：https://blog.csdn.net/Jacky__Ren/article/details/123647618
 #### 安装使用
 进入项目根目录，创建build文件夹进行编译
 ```
