@@ -6,6 +6,7 @@
 * 只实现了epoll这一个IO-Multiplexing,没有实现poll/select
 * 日志系统暂时还没有实现Muduo的双缓冲异步日志系统，制作了简单的分级日志输出
 * Buffer部分Muduo库没有提供writeFd方法，本项目加入了writeFd，在处理outputBuffer剩余未发数据时交给Buffer来处理
+* 示例中仅实现了http服务器与echo服务器，使用了Apache Benchmark做了压测，详见下文
 * 暂时没有做TcpClient部分
 
 具体实现简介见博文：https://blog.csdn.net/Jacky__Ren/article/details/123647618
