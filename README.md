@@ -143,6 +143,7 @@ Time per request:       0.015 [ms] (mean, across all concurrent requests)
 Transfer rate:          7758.76 [Kbytes/sec] received
 ```
 可以看出在并发处理数据的速度还是很快速的
+
 **与nginx对比**
 使用openresty集成的nginx http服务器作为对比(worker_processes=4)
 nginx的conf文件为
