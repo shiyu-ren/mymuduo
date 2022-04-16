@@ -4,7 +4,7 @@
 * 去掉了Muduo库中的Boost依赖，完全使用C++标准，如使用std::function<>
 * 没有单独封装Thread，使用C++11引入的std::thread搭配lambda表达式实现工作线程，没有直接使用pthread库。类似的直接使用C++11/17的还有std::atomic，std::any等
 * 只实现了epoll这一个IO-Multiplexing,没有实现poll/select
-* 日志系统暂时还没有实现Muduo的双缓冲异步日志系统，制作了简单的分级日志输出
+* 异步日志模块前端不同与原作者的C++风格，是格式化字符串（fmt）风格，前后端异步日志写入使用陈硕老师双缓冲区的思想实现。由于只用于学习，不支持日志滚动功能
 * Buffer部分Muduo库没有提供writeFd方法，本项目加入了writeFd，在处理outputBuffer剩余未发数据时交给Buffer来处理
 * 示例中仅实现了http服务器与echo服务器，使用了Apache Benchmark做了压测，详见下文
 * 暂时没有做TcpClient部分
