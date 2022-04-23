@@ -74,6 +74,7 @@ void Acceptor::handleRead()
     else
     {
         LOG_ERROR("Acceptor accept error\n");
+        //设一个空的fd占位，当fd资源都满了后，就释放这个空fd，把来的lfd接受再立马关闭，然后再接着占位
         if(errno == EMFILE)
         {
             ::close(idleFd_);

@@ -218,7 +218,7 @@ void TcpConnection::sendInLoop(const void* data, size_t len)
         outputBuffer_.append((char*)data + nwrote, remaining);
         if(!channel_->isWriting())
         {
-            channel_->enableReading();  //这里一定要注册channel的写事件，否则poller不会通知Epollout
+            channel_->enableWriting();  //这里一定要注册channel的写事件，否则poller不会通知Epollout
         }
     }
 }
